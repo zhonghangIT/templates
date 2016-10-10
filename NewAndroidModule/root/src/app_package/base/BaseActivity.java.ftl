@@ -16,6 +16,12 @@ public abstract  class BaseActivity extends ${superClass} {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutId());
         ButterKnife.bind(this);
+        initViews();
+        initData();
     }
+    public abstract void initViews();
+
+    public abstract void initData();
+
     public abstract  int getLayoutId();
 }

@@ -1,7 +1,7 @@
 package ${packageName};
 
 /**
- * Created by zhonghang on 2016/10/9.
+ * Created by zhonghang on 2016/10/11.
  */
 
 public class ${presenterClass} implements ${contractClass}.Presenter {

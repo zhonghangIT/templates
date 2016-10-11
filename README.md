@@ -1,11 +1,14 @@
 # Android模板
 此模板主要用于项目开始创建，架构方式使用的是MVP设计模式，主要原因使用mvp需要创建的类太多，所以这里使用了模板
 
+#使用该模板中的MVPActivity和MVPFragment必须使用该模板创建的项目！！！
+
 使用方式
 
     将下载的模板覆盖studio的模板
     模板的位置   studio的位置/Contents/plugins/android/lib/templates
     覆盖gradle-projects下的NewAndroidProject和NewAndroidMoudle
+    将actvities文件夹下的common文件夹拷贝一份放置到gradle-projects文件夹下
     将MVPActivity拷贝至activies文件夹下
     将MVPFragment拷贝至others文件夹下
 

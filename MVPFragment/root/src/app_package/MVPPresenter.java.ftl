@@ -1,5 +1,6 @@
 package ${packageName};
 
+import rx.subscriptions.CompositeSubscription;
 /**
  * Created by zhonghang on 2016/10/11.
  */
@@ -7,7 +8,7 @@ package ${packageName};
 public class ${presenterClass} implements ${contractClass}.Presenter {
     private ${contractClass}.View mView;
     private ${contractClass}.Modle mModle;
-
+    private CompositeSubscription compositeSubscription;
     public ${presenterClass}() {
     }
 
@@ -20,5 +21,6 @@ public class ${presenterClass} implements ${contractClass}.Presenter {
     public void attachView(${contractClass}.View view) {
       mView=view;
       this.mModle = new ${modleClass}();
+      compositeSubscription = new CompositeSubscription();
     }
 }

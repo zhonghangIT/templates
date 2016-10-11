@@ -70,7 +70,7 @@ public class HttpHelper {
     }
 
 
-    private RetrofitService getRetrofitApiService() {
+    private RetrofitApiService getRetrofitApiService() {
         return getRetrofit().create(RetrofitApiService.class);
     }
 
@@ -91,7 +91,7 @@ public class HttpHelper {
 
     /**
      *方法举例说明,这里直接使用了rxjava进行回调
-     public Observable<Recommend> getRecommend(String gender) {
+     public Observable<String> getRecommend(String gender) {
      return service.getRecomend(gender);
      }
      */
